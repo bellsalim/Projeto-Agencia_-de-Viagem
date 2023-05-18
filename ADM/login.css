@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18pt;
+    font-family: 'Poppins';
+}
+
+body {
+    color: rgba(250, 235, 215, 0.925);
+    background: rgb(58, 11, 90);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.678);
+    max-width: 1000px;
+    padding: 2.5rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 36px;
+    font-weight: 330;
+    text-align: left;
+}
+
+main strong {
+    color: red;
+}
+
+form input {
+    width: 100%;
+}
+
+form input[ type="submit"] {
+    color: rgba(250, 235, 215, 0.925);
+    background: linear-gradient( to left, rgba(185, 228, 182, 0.664), rgba(89, 206, 107, 0.705), rgba(26, 61, 31, 0.849));
+    font-family: 'Poppins';
+    border-radius: 40px;
+    font-size: 27px;
+    width: 350px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[ type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient( to left, rgba(7, 19, 7, 0.952), rgba(54, 107, 62, 0.911), rgba(152, 168, 154, 0.849));
+    font-size: 27px;
+}
+
+.footer span {
+    font-size: 26px;
+}
+
+hr {
+    background: linear-gradient( to left, rgb(83, 189, 162), rgb(201, 241, 56));
+    height: 4px;
+    width: 56px;
+    margin-bottom: 30px;
+}

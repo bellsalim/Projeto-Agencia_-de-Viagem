@@ -24,7 +24,7 @@ $eventosJSON = json_decode(json_encode($pacotes));
         content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Stylesheets-->
@@ -57,10 +57,7 @@ $eventosJSON = json_decode(json_encode($pacotes));
 </head>
 
 <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
-                src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
-                alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
-    </div>
+
     <div class="preloader">
         <div class="preloader-body">
             <div class="cssload-container">
@@ -107,14 +104,14 @@ $eventosJSON = json_decode(json_encode($pacotes));
                                     <ul class="rd-navbar-nav">
                                         <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">Pacotes</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php">Pacotes</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="login.php">Login</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <ul align="right" class="rd-navbar-nav">
-                                    <li class="rd-nav-item active"><img src="images/l0g0.png" width="94">
+                                    <li class="rd-nav-item active"><img src="images/LOG0.png" width="94">
                                     </li>
                             </div>
                         </div>
@@ -314,7 +311,7 @@ $eventosJSON = json_decode(json_encode($pacotes));
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="index.html"><img src="images/l0g0.png" alt="" class="img-fluid logo-footer"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid logo-footer"></a>
 
 
                 </div>

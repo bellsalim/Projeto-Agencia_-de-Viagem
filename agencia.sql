@@ -22,11 +22,9 @@ CREATE TABLE pacotes(
 	data_volta date NOT NULL,
 	duracao int (3) NOT NULL,
 	valor float (7,2) NOT NULL,
-	disponivel set ("S", "N") NOT NULL,
-	almoco set ("S", "N") NOT NULL,
-	jantar set ("S", "N") NOT NULL,
-	cafe set ("S", "N") NOT NULL,
-	turismo set ("S", "N") NOT NULL
+	descricao varchar(100),
+	disponivel set ("S", "N") NOT NULL
+
 
 );
 
@@ -56,10 +54,10 @@ CREATE TABLE users(
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO pacotes (nome,data_ida,data_volta, duracao,valor, disponivel,almoco,jantar,cafe,turismo) VALUES
-('Pacote Hotel Akmani Legian', '2023-06-12','2023-06-29', 17,20.000, 'S','S','S','S','S'),
+INSERT INTO pacotes (nome,data_ida,data_volta, duracao,valor, descricao, disponivel) VALUES
+('Pacote 4 Noites Hotel Akmani Legian', '2023-06-12','2023-06-29', 2,1250.00,'📍 Bali - Indonésia
+																			    ᯤ WIFI
+																				☕︎ Café da manhã incluso', 'S'),
 ('Pacote The Grace Hotel', '2023-06-12','2023-06-29', 17,20.000, 'S','S','S','S','S'),
 ('Pacote Hotel Milat Cave', '2023-06-12','2023-06-29', 17,20.000, 'S','S','S','S','S');
-
-
-
+('Pacote Hotel Milat Cave', '2023-06-12','2023-06-29', 17,20.000, 'S','S','S','S','S', images/logo.png);
