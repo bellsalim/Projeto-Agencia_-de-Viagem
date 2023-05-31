@@ -6,7 +6,7 @@ setlocale(LC_ALL, "ptb");
 
 $pacotes = array();
 while ($row = $result->fetch_assoc()) {
-  $pacotes[] = $row;
+    $pacotes[] = $row;
 }
 
 $eventosJSON = json_decode(json_encode($pacotes));
@@ -102,11 +102,17 @@ $eventosJSON = json_decode(json_encode($pacotes));
                                 <!-- RD Navbar Nav-->
                                 <div align="left">
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php"><i
+                                                    class="icon fa fa-home"></i> Home</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php">Pacotes</a>
+                                        <li class="rd-nav-item "><a class="rd-nav-link" href="index.php"> <i
+                                                    class="icon fa fa-info-circle"></i> Sobre nós </a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="login.php">Login</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php"><i
+                                                    class="icon fa fa-suitcase "></i> Pacotes</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="login.php"><i
+                                                    class="icon fa fa-shopping-cart "></i> Carrinho</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -123,7 +129,7 @@ $eventosJSON = json_decode(json_encode($pacotes));
         <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
             data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
             <div class="swiper-wrapper text-left">
-                <div class="swiper-slide context-dark" data-slide-bg="images/fuji.jpg">
+                <div class="swiper-slide context-dark" data-slide-bg="images/topo.jpg">
                     <div class="swiper-slide-caption section-md">
                         <div class="container">
                             <div class="row">
@@ -179,8 +185,16 @@ $eventosJSON = json_decode(json_encode($pacotes));
             <!-- Swiper Pagination-->
             <div class="swiper-pagination"></div>
         </section>
-        <!-- Section Box Categories-->
+
+
         <section class="section section-lg section-top-1 bg-gray-4">
+            <?php
+            $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '1' and disponivel = 'S'") or die($mysqli->error);
+
+            $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '1'");
+            while ($ln = mysqli_fetch_assoc($result)) {
+            ?>
+
             <div class="container offset-negative-1">
                 <div class="box-categories cta-box-wrap">
                     <div class="box-categories-content">
@@ -188,86 +202,152 @@ $eventosJSON = json_decode(json_encode($pacotes));
 
                             <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                                 <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/baly.jpg" alt="" width="368"
-                                                height="420" /></a>
-                                        <h5 class="box-categories-title">Pacote 4 noites hotel Akmani Legian </h5>
+
+                                    <li><a href="index.php"><img src="images/jericoacoaraPI.jpg" alt="" width="368"
+                                                height=" 100%" /></a>
+                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?> </h5>
                                     </li>
                                 </ul>
                             </div>
+                            <?php } ?>
+                            <?php
+                            $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '2' and disponivel = 'S'") or die($mysqli->error);
 
-
+                            $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '2'");
+                            while ($ln = mysqli_fetch_assoc($result)) {
+                            ?>
                             <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                                 <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/sdney.jpg" alt="" width="368"
-                                                height="420" /></a>
-                                        <h5 class="box-categories-title">Pacote 3 noites The Grace Hotel</h5>
+                                    <li><a href="index.php"><img src="images/palmas.jpg" width="100%"
+                                                height=" 75%" /></a>
+                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
                                     </li>
                                 </ul>
                             </div>
 
+                            <?php } ?>
+                            <?php
+                            $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '3' and disponivel = 'S'") or die($mysqli->error);
 
-
+                            $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '3'");
+                            while ($ln = mysqli_fetch_assoc($result)) {
+                            ?>
                             <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                                 <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/capadocia.jpg" alt="" width="368"
-                                                height="420" /></a>
-                                        <h5 class="box-categories-title">Pacote 7 noites hotel Milat Cave</h5>
+                                    <li><a href="index.php"><img src="images/amazonia.jpg" alt="" width="100%"
+                                                height=" 75%" /></a>
+                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
                                     </li>
                                 </ul>
                             </div>
-                            </u>
-                            </u>
-                        </div>
-                    </div>
-        </section>
+                            <?php } ?>
 
-
-        <section class="section section-lg section-top-1 bg-gray-4">
-            <div class="container offset-negative-1">
-                <div class="box-categories cta-box-wrap">
-                    <div class="box-categories-content">
-                        <div class="row justify-content-center">
-
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/baly.jpg" alt="" width="368"
-                                                height="420" /></a>
-                                        <h5 class="box-categories-title">Pacote 4 noites hotel Akmani Legian </h5>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/sdney.jpg" alt="" width="368"
-                                                height="420" /></a>
-                                        <h5 class="box-categories-title">Pacote 3 noites The Grace Hotel</h5>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/capadocia.jpg" alt="" width="368"
-                                                height="420" /></a>
-                                        <h5 class="box-categories-title">Pacote 7 noites hotel Milat Cave</h5>
-                                    </li>
-                                </ul>
-                            </div>
                             </u>
                             </u>
                         </div>
                     </div>
                 </div>
+        </section>
+        <section class="section section-lg section-top-1 bg-gray-4">
+            <?php
+            $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '4' and disponivel = 'S'") or die($mysqli->error);
+
+            $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '4'");
+            while ($ln = mysqli_fetch_assoc($result)) {
+            ?>
+
+            <div class="container offset-negative-1">
+                <div class="box-categories cta-box-wrap">
+                    <div class="box-categories-content">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+
+                                    <li><a href="index.php"><img src="images/jericoacoara.jpg" alt="" width="368"
+                                                height=" 100%" /></a>
+                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?> </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <?php } ?>
+                            <?php
+                            $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '5' and disponivel = 'S'") or die($mysqli->error);
+
+                            $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '5'");
+                            while ($ln = mysqli_fetch_assoc($result)) {
+                            ?>
+                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li><a href="index.php"><img src="images/gramado.jpg" width="100%"
+                                                height=" 75%" /></a>
+                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <?php } ?>
+                            <?php
+                            $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '6' and disponivel = 'S'") or die($mysqli->error);
+
+                            $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '6'");
+                            while ($ln = mysqli_fetch_assoc($result)) {
+                            ?>
+                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                <ul class="list-marked-2 box-categories-list">
+                                    <li><a href="index.php"><img src="images/Porto Seguro.jpg" alt="" width="100%"
+                                                height=" 75%" /></a>
+                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <?php } ?>
+                            <center><br> <br>
+                                <section class="section section-lg section-top-1 bg-gray-4" align-items-center>
+                                    <?php
+                                    $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '7' and disponivel = 'S'") or die($mysqli->error);
+
+                                    $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '7'");
+                                    while ($ln = mysqli_fetch_assoc($result)) {
+                                    ?>
+
+                                    <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s" align-items-center>
+                                        <ul class="list-marked-2 box-categories-list">
+                                            <li><a href="index.php"><img src="images/maranhao.jpg" alt="" /></a>
+                                                <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </center>
+                            <?php } ?>
+                            </u>
+                            </u>
+                        </div>
+                    </div>
 
 
 
-            </div><a class="link-classic wow fadeInUp" href="#"> Outros pacotes <span></span></a>
-            <!-- Owl Carousel-->
+
+                </div><a class="link-classic wow fadeInUp" href="#"> Outros pacotes <span></span></a>
+
+            </div>
+
     </div>
+
+    </section>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
     </section>
     <!-- Discover New Horizons-->
     <section class="section section-sm section-first bg-default text-md-left">
@@ -320,10 +400,12 @@ $eventosJSON = json_decode(json_encode($pacotes));
                         <h2>Links Rápidos</h2>
                         <br>
                         <div class="use-links">
-                            <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home </a></li>
-                            <li><a href="about.html"><i class="fa-solid fa-angles-right"></i> Sobre nós </a></li>
-                            <li><a href="pacotes.html"><i class="fa-solid fa-angles-right"></i> Pacotes</a></li>
-                            <li><a href="login.html"><i class="fa-solid fa-angles-right"></i> Login</a></li>
+                            <li><a href="index.html">
+                                    <i class="icon fa fa-home"></i>Home
+                                </a></li>
+                            <li><a href="about.html"><i class="icon fa fa-info-circle"></i>Sobre nós </a></li>
+                            <li><a href="pacotes.html"><i class="icon fa fa-suitcase "></i>Pacotes</a></li>
+                            <li><a href="login.html"><i class="icon fa fa-shopping-cart "></i>Carrinho</a></li>
                         </div>
                     </div>
 
@@ -333,9 +415,9 @@ $eventosJSON = json_decode(json_encode($pacotes));
                         <h2>Redes sociais</h2>
                         <img src="./assets/images/about/home_line.png" alt="">
                         <div class="social-icons">
-                            <li><a href=""><i class="icon fa fa-facebook-f"></i> Facebook</a></li>
-                            <li><a href=""><i class="icon fa fa-instagram"></i> Instagram</a></li>
-                            <li><a href=""><i class="icon fa fa-linkedin"></i> Linkedin</a></li>
+                            <li><a href=""><i class="icon fa fa-facebook-f"></i>Facebook</a></li>
+                            <li><a href=""><i class="icon fa fa-instagram"></i>Instagram</a></li>
+                            <li><a href=""><i class="icon fa fa-linkedin"></i>Linkedin</a></li>
                         </div>
                     </div>
 

@@ -9,10 +9,10 @@ if (isset($_POST["adicionar"])) {
    $valor = $_POST["valor"];
    $descricao = $_POST["descricao"];
    $disponivel = $_POST["disponivel"];
- 
+   $local = $_POST["local"];
 
 
-   $mysqli->query("INSERT INTO `pacotes`(`nome`, `data_ida`,`data_volta`, `duracao`, `valor`, `descricao`, `disponivel`) VALUES ('$nome', '$data_ida','$data_volta', '$duracao', '$valor','$descricao','$disponivel')") or die($mysqli->error);
+   $mysqli->query("INSERT INTO `pacotes`(`nome`, `data_ida`,`data_volta`, `duracao`, `valor`, `descricao`, `disponivel`, `local`) VALUES ('$nome', '$data_ida','$data_volta', '$duracao', '$valor','$descricao','$disponivel', '$local')") or die($mysqli->error);
    $conexao = mysqli_connect('localhost', 'root', '', 'agencia');
  
    header("location: lista.php");
@@ -28,9 +28,9 @@ if (isset($_POST["editar"])) {
    $valor = $_POST["valor"];
    $disponivel = $_POST["disponivel"];
    $descricao = $_POST["descricao"];
-   
+   $local = $_POST["local"];
 
-   $mysqli->query("UPDATE `pacotes` SET `nome`='$nome',`data_ida`='$data_ida',`data_volta`='$data_volta',`duracao`= '$duracao', `valor`='$valor', `descricao`='$descricao', `disponivel`='$disponivel' WHERE codigo = $codigo") or die($mysqli->error);
+   $mysqli->query("UPDATE `pacotes` SET `nome`='$nome',`data_ida`='$data_ida',`data_volta`='$data_volta',`duracao`= '$duracao', `valor`='$valor', `descricao`='$descricao', `disponivel`='$disponivel', `local`='$local' WHERE codigo = $codigo") or die($mysqli->error);
 
    header("location: lista.php");
 }

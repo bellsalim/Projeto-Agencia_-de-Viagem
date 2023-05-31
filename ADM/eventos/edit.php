@@ -36,7 +36,10 @@
                     <label class="form-label" for="nome">Nome</label>
                     <input class="form-control" type="text" name="nome" id="" value="<?php echo $pacote["nome"]; ?>">
                 </div>
-
+                <div class="form-group mb-3">
+                    <label class="form-label" for="local">Local</label>
+                    <input class="form-control" type="local" name="local" id="" value="<?php echo $pacote["local"]; ?>">
+                </div>
 
 
                 <div class="form-group mb-3">
@@ -63,17 +66,19 @@
                 </div>
 
                 <div class="form-group mb-3">
-                    <label class="form-label" for="em_cartaz">descrição</label>
+                    <label class="form-label" for="descricao">descrição</label>
                     <input class="form-control" type="descricao" name="descricao" id=""
                         value="<?php echo $pacote["descricao"]; ?>">
                 </div>
 
 
                 <div class="form-group mb-3">
-                    <label class="form-label" for="em_cartaz">disponivel?</label>
+                    <label class="form-label" for="disponivel">disponivel?</label>
                     <input class="form-control" type="disponivel" name="disponivel" id=""
                         value="<?php echo $pacote["disponivel"]; ?>">
                 </div>
+
+
 
 
 

@@ -11,6 +11,10 @@
                         <label class="form-label" for="nome">Nome</label>
                         <input class="form-control" type="text" name="nome" id="" required>
                     </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="local">local</label>
+                        <input class="form-control" type="local" name="local" id="" required>
+                    </div>
 
                     <div class="form-group mb-3">
                         <label class="form-label" for="data_ida">Data de Ida</label>
@@ -41,6 +45,7 @@
                         <label class="form-label" for="disponivel">Disponível</label>
                         <input class="form-control" type="disponivel" name="disponivel" id="" required>
                     </div>
+
 
 
 

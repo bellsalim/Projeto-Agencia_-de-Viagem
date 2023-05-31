@@ -39,6 +39,7 @@ include "../includes/verificaLogin.php";
                 <thead>
                     <th>#</th>
                     <th>Nome</th>
+                    <th>Local</th>
                     <th>data de ida</th>
                     <th>data de volta</th>
                     <th>Duração</th>
@@ -52,6 +53,7 @@ include "../includes/verificaLogin.php";
                 <tr>
                     <th><?php echo $row["codigo"]; ?></th>
                     <td><?php echo $row["nome"]; ?></td>
+                    <td><?php echo $row["local"]; ?></td>
                     <td><?php echo $row["data_ida"]; ?></td>
                     <td><?php echo $row["data_volta"]; ?></td>
                     <td><?php echo $row["duracao"]; ?></td>
