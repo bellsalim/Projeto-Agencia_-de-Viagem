@@ -22,30 +22,33 @@
 
 
 		<form align="center" method="POST" class="colorlib-form" action="" style="background-color: #808080;">
-			<h2>Login</h2>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="form-group">
-						<div align="left" class="col-md-12">
-							<label for="email">Email</label>
-							<input type="text" id="email" name="email" class="form-control" placeholder="Digite seu email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required>
-						</div>
+		    <h2>Login</h2>
+		    <div class="row">
+		        <div class="col-md-12">
+		            <div class="form-group">
+		                <div align="left" class="col-md-12">
+		                    <label for="email">Email</label>
+		                    <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu email"
+		                        pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+		                        required>
+		                </div>
 
-						<div align="left" class="col-md-12">
-							<label for="senha">Senha</label>
-							<input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha" required>
-						</div>
-					</div> <br>
+		                <div align="left" class="col-md-12">
+		                    <label for="senha">Senha</label>
+		                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha"
+		                        required>
+		                </div>
+		            </div> <br>
 
-					<div class="form-group">
-						<div align="center">
-							<div>
-								<br>
-								<label> <a href="../template_store/cadastro.php"> Cadastre-se </a> </label>
-							</div>
-							<input class="btn btn-primary" type="submit" name="enviar">
-						</div>
-					</div>
-				</div>
-			</div>
+		            <div class="form-group">
+		                <div align="center">
+		                    <div>
+		                        <br>
+		                        <label> <a href="../public/cadastro.php"> Cadastre-se </a> </label>
+		                    </div>
+		                    <input class="btn btn-primary" type="submit" name="enviar">
+		                </div>
+		            </div>
+		        </div>
+		    </div>
 		</form>

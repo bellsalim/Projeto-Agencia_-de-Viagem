@@ -41,7 +41,7 @@ if ($result == true) {
         $stmt->execute();
         $stmt = null;
     }
-    header('Location: ../../template_store/shop.php');
+    header('Location: ../../public/shop.php');
 } else {
-    header('Location: ../../template_store/login.php');
+    header('Location: ../../public/login.php');
 }

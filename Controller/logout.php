@@ -8,6 +8,4 @@
 	 
 	session_destroy();
 	 
-	header('Location: ../../template_store/login.php');
-
-?>
+	header('Location: ../../public/login.php');

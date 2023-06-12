@@ -17,6 +17,4 @@
     $stmt = null;  
 
 
-header('Location: ../../template_store/cart.php'); 
-
-?>
+header('Location: ../../public/cart.php');

@@ -57,4 +57,4 @@ $stmt5->bindParam(':carrinho_idcarrinho', $result[0]);
 $stmt5->execute();
 $stmt5 = null;
 
-header('Location: ../../template_store/order-complete.php?enviar="' . $_POST["enviar"] . '"');
+header('Location: ../../public/order-complete.php?enviar="' . $_POST["enviar"] . '"');

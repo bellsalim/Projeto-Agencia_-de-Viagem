@@ -30,10 +30,12 @@ if ($result) {
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
                                 <div align="left">
-                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php"><i class="icon fa fa-home"></i> Home</a>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php"><i
+                                                class="icon fa fa-home"></i> Home</a>
                                     </li>
 
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php"><i class="icon fa fa-suitcase "></i> Pacotes</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php"><i
+                                                class="icon fa fa-suitcase "></i> Pacotes</a>
 
                                         <?php
                                         if ($result == true) {
@@ -62,7 +64,7 @@ if ($result) {
         <div class="row">
             <div class="container" style="width: 40%;  background-color: #808080;">
                 <?php
-                include_once    "../template_store/form-login.php";
+                include_once    "../public/form-login.php";
                 ?>
             </div>
         </div>

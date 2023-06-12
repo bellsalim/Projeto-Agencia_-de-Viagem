@@ -1,4 +1,3 @@
-
 <?php
 	
 	include_once 'addCliente.php';
@@ -21,14 +20,14 @@
 		
 	    if($count > 0){
 	        echo "
-				<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=../../template_store/cadastro.php'>
+				<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=../../public/cadastro.php'>
 				<script type=\"text/javascript\">
 					alert(\"Email já existente, por favor digite outro!\");
 				</script>
 				";
 	    }else if( $count2 > 0){
 	        echo "
-				<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=../../template_store/cadastro.php'>
+				<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=../../public/cadastro.php'>
 				<script type=\"text/javascript\">
 					alert(\"Cpf já existente, por favor digite outro!\");
 				</script>
