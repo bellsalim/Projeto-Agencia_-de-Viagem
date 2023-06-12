@@ -1,0 +1,20 @@
+body {
+    display: block;
+    padding: 0 150px;
+    overflow-x: hidden;
+}
+
+#main {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 50px auto 50px;
+    gap: 24px;
+}
+
+#comprovante {
+    text-align: center;
+    grid-row: 2 / 3;
+    padding: 30px;
+    border-radius: 8px;
+    background: var(--white);
+}

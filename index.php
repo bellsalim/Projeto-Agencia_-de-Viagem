@@ -20,8 +20,7 @@ $eventosJSON = json_decode(json_encode($pacotes));
     <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport"
-        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="images/icon.ico">
@@ -30,29 +29,28 @@ $eventosJSON = json_decode(json_encode($pacotes));
     <!-- Stylesheets-->
 
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" type="text/css"
-        href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-    .ie-panel {
-        display: none;
-        background: #212121;
-        padding: 10px 0;
-        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
-        clear: both;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-    }
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
 
-    html.ie-10 .ie-panel,
-    html.lt-ie-10 .ie-panel {
-        display: block;
-    }
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
     </style>
 </head>
 
@@ -71,23 +69,14 @@ $eventosJSON = json_decode(json_encode($pacotes));
         <header class="section page-header">
             <!-- RD Navbar-->
             <div class="rd-navbar-wrap">
-                <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed"
-                    data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
-                    data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
-                    data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
-                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
-                    data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px"
-                    data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="106px" data-lg-stick-up="true"
-                    data-xl-stick-up="true" data-xxl-stick-up="true">
-                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
-                        data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="106px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
                     <div class="rd-navbar-aside-outer">
 
                         <!-- RD Navbar Panel-->
                         <div class="rd-navbar-panel">
                             <!-- RD Navbar Toggle-->
-                            <button class="rd-navbar-toggle"
-                                data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <!-- RD Navbar Brand-->
                             <div class="rd-navbar-brand">
 
@@ -102,17 +91,13 @@ $eventosJSON = json_decode(json_encode($pacotes));
                                 <!-- RD Navbar Nav-->
                                 <div align="left">
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php"><i
-                                                    class="icon fa fa-home"></i> Home</a>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php"><i class="icon fa fa-home"></i> Home</a>
                                         </li>
-                                        <li class="rd-nav-item "><a class="rd-nav-link" href="index.php"> <i
-                                                    class="icon fa fa-info-circle"></i> Sobre nós </a>
+                                        <li class="rd-nav-item "><a class="rd-nav-link" href="index.php"> <i class="icon fa fa-info-circle"></i> Sobre nós </a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php"><i
-                                                    class="icon fa fa-suitcase "></i> Pacotes</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="viagens.php"><i class="icon fa fa-suitcase "></i> Pacotes</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="login.php"><i
-                                                    class="icon fa fa-shopping-cart "></i> Carrinho</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="login.php"><i class="icon fa fa-shopping-cart "></i> Carrinho</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -126,20 +111,16 @@ $eventosJSON = json_decode(json_encode($pacotes));
             </div>
         </header>
         <!-- Swiper-->
-        <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
-            data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
+        <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
             <div class="swiper-wrapper text-left">
                 <div class="swiper-slide context-dark" data-slide-bg="images/topo.jpg">
                     <div class="swiper-slide-caption section-md">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h6 class="text-uppercase" data-caption-animate="fadeInRight"
-                                        data-caption-delay="0"><b>CONHEÇA AS BELEZAS DO MONTE FUJI</b></h6>
-                                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp"
-                                        data-caption-delay="100"><span></span><span class="font-weight-bold"> EXPLORE O
-                                            MUNDO</span></h2><a class="button button-default-outline button-ujarak"
-                                        href="#" data-caption-animate="fadeInLeft" data-caption-delay="0"><b> Saiba
+                                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0"><b>CONHEÇA AS BELEZAS DO MONTE FUJI</b></h6>
+                                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span></span><span class="font-weight-bold"> EXPLORE O
+                                            MUNDO</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0"><b> Saiba
                                             Mais</b></a>
                                 </div>
                             </div>
@@ -151,13 +132,9 @@ $eventosJSON = json_decode(json_encode($pacotes));
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h6 class="text-uppercase" data-caption-animate="fadeInRight"
-                                        data-caption-delay="100"><b>CONHEÇA NOSSO SERVIÇOS PARA SIDNEY </b></h6>
-                                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp"
-                                        data-caption-delay="100"><span> </span><span class="font-weight-bold"> CONFIE EM
-                                            NOSSA EXPERIÊNCIA </span></h2><a
-                                        class="button button-default-outline button-ujarak" href="#"
-                                        data-caption-animate="fadeInLeft" data-caption-delay="0"><b>Saiba Mais</a></b>
+                                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="100"><b>CONHEÇA NOSSO SERVIÇOS PARA SIDNEY </b></h6>
+                                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span> </span><span class="font-weight-bold"> CONFIE EM
+                                            NOSSA EXPERIÊNCIA </span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0"><b>Saiba Mais</a></b>
                                     </font>
                                 </div>
                             </div>
@@ -169,12 +146,9 @@ $eventosJSON = json_decode(json_encode($pacotes));
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <h6 class="text-uppercase" data-caption-animate="fadeInRight"
-                                        data-caption-delay="0"><b> FERIADO NA ITÁLIA</b></h6>
-                                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp"
-                                        data-caption-delay="100"><span></span><span class="font-weight-bold"> CRIE SEU
-                                            TUOR </span></h2><a class="button button-default-outline button-ujarak"
-                                        href="#" data-caption-animate="fadeInLeft" data-caption-delay="0"><b>Saiba
+                                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0"><b> FERIADO NA ITÁLIA</b></h6>
+                                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span></span><span class="font-weight-bold"> CRIE SEU
+                                            TUOR </span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0"><b>Saiba
                                             mais</b></a>
                                 </div>
                             </div>
@@ -195,20 +169,19 @@ $eventosJSON = json_decode(json_encode($pacotes));
             while ($ln = mysqli_fetch_assoc($result)) {
             ?>
 
-            <div class="container offset-negative-1">
-                <div class="box-categories cta-box-wrap">
-                    <div class="box-categories-content">
-                        <div class="row justify-content-center">
+                <div class="container offset-negative-1">
+                    <div class="box-categories cta-box-wrap">
+                        <div class="box-categories-content">
+                            <div class="row justify-content-center">
 
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
+                                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                    <ul class="list-marked-2 box-categories-list">
 
-                                    <li><a href="index.php"><img src="images/jericoacoaraPI.jpg" alt="" width="368"
-                                                height=" 100%" /></a>
-                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?> </h5>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <li><a href="index.php"><img src="images/jericoacoaraPI.jpg" alt="" width="368" height=" 100%" /></a>
+                                            <h5 class="box-categories-title"><?php echo $ln['nome'] ?> </h5>
+                                        </li>
+                                    </ul>
+                                </div>
                             <?php } ?>
                             <?php
                             $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '2' and disponivel = 'S'") or die($mysqli->error);
@@ -216,14 +189,13 @@ $eventosJSON = json_decode(json_encode($pacotes));
                             $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '2'");
                             while ($ln = mysqli_fetch_assoc($result)) {
                             ?>
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/palmas.jpg" width="100%"
-                                                height=" 75%" /></a>
-                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                    <ul class="list-marked-2 box-categories-list">
+                                        <li><a href="index.php"><img src="images/palmas.jpg" width="100%" height=" 75%" /></a>
+                                            <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                        </li>
+                                    </ul>
+                                </div>
 
                             <?php } ?>
                             <?php
@@ -232,21 +204,20 @@ $eventosJSON = json_decode(json_encode($pacotes));
                             $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '3'");
                             while ($ln = mysqli_fetch_assoc($result)) {
                             ?>
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/amazonia.jpg" alt="" width="100%"
-                                                height=" 75%" /></a>
-                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                    <ul class="list-marked-2 box-categories-list">
+                                        <li><a href="index.php"><img src="images/amazonia.jpg" alt="" width="100%" height=" 75%" /></a>
+                                            <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                        </li>
+                                    </ul>
+                                </div>
                             <?php } ?>
 
                             </u>
                             </u>
+                            </div>
                         </div>
                     </div>
-                </div>
         </section>
         <section class="section section-lg section-top-1 bg-gray-4">
             <?php
@@ -256,20 +227,19 @@ $eventosJSON = json_decode(json_encode($pacotes));
             while ($ln = mysqli_fetch_assoc($result)) {
             ?>
 
-            <div class="container offset-negative-1">
-                <div class="box-categories cta-box-wrap">
-                    <div class="box-categories-content">
-                        <div class="row justify-content-center">
+                <div class="container offset-negative-1">
+                    <div class="box-categories cta-box-wrap">
+                        <div class="box-categories-content">
+                            <div class="row justify-content-center">
 
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
+                                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                    <ul class="list-marked-2 box-categories-list">
 
-                                    <li><a href="index.php"><img src="images/jericoacoara.jpg" alt="" width="368"
-                                                height=" 100%" /></a>
-                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?> </h5>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <li><a href="index.php"><img src="images/jericoacoara.jpg" alt="" width="368" height=" 100%" /></a>
+                                            <h5 class="box-categories-title"><?php echo $ln['nome'] ?> </h5>
+                                        </li>
+                                    </ul>
+                                </div>
                             <?php } ?>
                             <?php
                             $result = $mysqli->query(" SELECT * FROM `pacotes` where `codigo` = '5' and disponivel = 'S'") or die($mysqli->error);
@@ -277,14 +247,13 @@ $eventosJSON = json_decode(json_encode($pacotes));
                             $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '5'");
                             while ($ln = mysqli_fetch_assoc($result)) {
                             ?>
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/gramado.jpg" width="100%"
-                                                height=" 75%" /></a>
-                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                    <ul class="list-marked-2 box-categories-list">
+                                        <li><a href="index.php"><img src="images/gramado.jpg" width="100%" height=" 75%" /></a>
+                                            <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                        </li>
+                                    </ul>
+                                </div>
 
                             <?php } ?>
                             <?php
@@ -293,14 +262,13 @@ $eventosJSON = json_decode(json_encode($pacotes));
                             $mysqli_result = (" SELECT * FROM `pacotes` where `codigo` = '6'");
                             while ($ln = mysqli_fetch_assoc($result)) {
                             ?>
-                            <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                                <ul class="list-marked-2 box-categories-list">
-                                    <li><a href="index.php"><img src="images/Porto Seguro.jpg" alt="" width="100%"
-                                                height=" 75%" /></a>
-                                        <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                                    <ul class="list-marked-2 box-categories-list">
+                                        <li><a href="index.php"><img src="images/Porto Seguro.jpg" alt="" width="100%" height=" 75%" /></a>
+                                            <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                        </li>
+                                    </ul>
+                                </div>
                             <?php } ?>
                             <center><br> <br>
                                 <section class="section section-lg section-top-1 bg-gray-4" align-items-center>
@@ -311,26 +279,26 @@ $eventosJSON = json_decode(json_encode($pacotes));
                                     while ($ln = mysqli_fetch_assoc($result)) {
                                     ?>
 
-                                    <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s" align-items-center>
-                                        <ul class="list-marked-2 box-categories-list">
-                                            <li><a href="index.php"><img src="images/maranhao.jpg" alt="" /></a>
-                                                <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s" align-items-center>
+                                            <ul class="list-marked-2 box-categories-list">
+                                                <li><a href="index.php"><img src="images/maranhao.jpg" alt="" /></a>
+                                                    <h5 class="box-categories-title"><?php echo $ln['nome'] ?></h5>
+                                                </li>
+                                            </ul>
+                                        </div>
                             </center>
-                            <?php } ?>
-                            </u>
-                            </u>
+                        <?php } ?>
+                        </u>
+                        </u>
+                            </div>
                         </div>
-                    </div>
 
 
 
 
-                </div><a class="link-classic wow fadeInUp" href="#"> Outros pacotes <span></span></a>
+                    </div><a class="link-classic wow fadeInUp" href="#"> Outros pacotes <span></span></a>
 
-            </div>
+                </div>
 
     </div>
 
@@ -353,21 +321,17 @@ $eventosJSON = json_decode(json_encode($pacotes));
     <section class="section section-sm section-first bg-default text-md-left">
         <div class="container">
             <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-                <div class="col-lg-6 text-center wow fadeInUp"><img src="images/agencia.gif" alt="" width="556"
-                        height="382" />
+                <div class="col-lg-6 text-center wow fadeInUp"><img src="images/agencia.gif" alt="" width="556" height="382" />
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".1s">
                     <div class="box-width-lg-470">
                         <h3>Quem somos nós?</h3>
                         <!-- Bootstrap tabs-->
-                        <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left"
-                            id="tabs-">
+                        <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left" id="tabs-">
                             <!-- Nav tabs-->
                             <ul class="nav nav-tabs">
-                                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1"
-                                        data-toggle="tab">Um pouco sobre nós</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2"
-                                        data-toggle="tab">Nossa missão</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1" data-toggle="tab">Um pouco sobre nós</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2" data-toggle="tab">Nossa missão</a></li>
                             </ul>
                             <!-- Tab panes-->
                             <div class="tab-content">
@@ -428,8 +392,7 @@ $eventosJSON = json_decode(json_encode($pacotes));
                         <h2>Contato</h2>
                         <br>
                         <div class="address-links">
-                            <li class="address1"><a href="https://encurtador.com.br/prR18"><i
-                                        class="icon fa fa-location-arrow">
+                            <li class="address1"><a href="https://encurtador.com.br/prR18"><i class="icon fa fa-location-arrow">
                                     </i>Avenida Cásper Líbero, 204 - Centro - SP</a></li>
                             <li><a href="tel:#"><i class="icon fa fa-phone"></i> +55 (11) 9 84465-9843</a></li>
                             <li><a href="mailto:#"><i class="icon fa fa-envelope"></i>contato@agviagens.com</a></li>
