@@ -1,54 +1,61 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+	include_once 'head.html';
+	include_once '../App/Controller/ClienteController.php';
+
+	$user = new ClienteController();
+
+	$result = $user->isLoggedIn();
+	if($result){
+		header('Location: shop.php');
+	}
+
+?>
+
+<!DOCTYPE HTML>
 <html>
-    
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistema de Cadastro - PHP + MySQL - Canal TI</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-</head>
+	<body>
+		
+	<div class="colorlib-loader"></div>
 
-<body>
-    <section class="hero is-success is-fullheight">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-grey">Sistema de Cadastro</h3>
-                    <h3 class="title has-text-grey"><a href="https://youtube.com/canaltioficial" target="_blank">Canal TI</a></h3>
-                    <div class="notification is-success">
-                      <p>Cadastro efetuado!</p>
-                      <p>Faça login informando o seu usuário e senha <a href="login.php">aqui</a></p>
-                    </div>
-                    <div class="notification is-info">
-                        <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
-                    </div>
-                    <div class="box">
-                        <form action="cadastrar.php" method="POST">
-                            <div class="field">
-                                <div class="control">
-                                    <input name="nome" type="text" class="input is-large" placeholder="Nome" autofocus>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input name="usuario" type="text" class="input is-large" placeholder="Usuário">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Senha">
-                                </div>
-                            </div>
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="index.php">Use New Mic</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="shop.php">Produtos</a></li>
+								<li class="active"><a href="login.php"> Login/Cadastre-se </a></li>
+								<?php
+									if ($result == true) {
+										echo '<li><a href="cart.php"><i class="icon-shopping-cart"></i> Carrinho </a></li>';
+									}
+								?>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 
+			<div class="row">
+				<div class="container" style="width: 50%; background-color: #808080;">
+					<?php
+						include_once "form-cadastro.php";
+					?>
+				</div>
+
+				<?php
+					include_once "footer.html";
+				?>
+			</div>
+	</div>
+	
+	</body>
 </html>
+

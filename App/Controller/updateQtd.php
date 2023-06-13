@@ -8,10 +8,10 @@ $user = new ClienteController();
     $conexao = new Conexao();
     $conexao = $conexao->conexao();
 
-    $stmt = $conexao->prepare('UPDATE carrinho_has_pacotes SET quantidade = :quantidade WHERE pacotes_codigo = :codigo ');
+    $stmt = $conexao->prepare('UPDATE carrinho_has_produto SET quantidade = :quantidade WHERE produto_idproduto = :idproduto ');
     $stmt->execute( array(
                     ':quantidade' => $_POST['id_quantidade'],
-                    ':codigo' => $_POST['codigo']
+                    ':idproduto' => $_POST['idproduto']
                     )
                 );
     $stmt = null;  

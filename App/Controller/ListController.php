@@ -9,7 +9,7 @@ class ListController {
     public static function selectList() {
         $conexao = new Conexao();
         $conexao = $conexao->conexao();
-        $stmt = $conexao->prepare('SELECT pedidoConcluido.nomePacotes, pedidoConcluido.valorPacotes, pedidoConcluido.imagemPacotes, pedidoConcluido.qtdPacotes
+        $stmt = $conexao->prepare('SELECT pedidoConcluido.nomeProduto, pedidoConcluido.valorProduto, pedidoConcluido.imagemProduto, pedidoConcluido.qtdProduto
         FROM pedidoConcluido 
         WHERE pedidoConcluido.cliente_cpf = "'.$_SESSION["user_cpf"].'";');
         $stmt->execute();
@@ -19,4 +19,6 @@ class ListController {
     }
 }
 
-/*SELECT Pacotes.nome, Pacotes.valor FROM finalizacompra INNER JOIN carrinho ON carrinho.idcarrinho = finalizacompra.carrinho_idcarrinho INNER JOIN carrinho_has_Pacotes ON carrinho.idcarrinho = carrinho_has_Pacotes.carrinho_idcarrinho INNER JOIN Pacotes ON Pacotes.idPacotes = carrinho_has_Pacotes.Pacotes_idPacotes WHERE carrinho.cliente_cpf = "000000";*/
+/*SELECT produto.nome, produto.valor FROM finalizacompra INNER JOIN carrinho ON carrinho.idcarrinho = finalizacompra.carrinho_idcarrinho INNER JOIN carrinho_has_produto ON carrinho.idcarrinho = carrinho_has_produto.carrinho_idcarrinho INNER JOIN produto ON produto.idproduto = carrinho_has_produto.produto_idproduto WHERE carrinho.cliente_cpf = "000000";*/
+
+?>

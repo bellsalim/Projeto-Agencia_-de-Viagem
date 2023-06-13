@@ -1,18 +1,20 @@
 <?php
 /**
- * Arquivo que retorna todos os pacotes disponiveis do db
+ * Arquivo que retorna todos os produtos disponiveis do db
  */
 include_once '../DataBase/conexao.php';
 
-class PacotesController {
+class ProdutoController {
 
-    public static function allPacotes(){
+    public static function allProdutos(){
         $conexao = new Conexao();
         $conexao = $conexao->conexao();
-        $stmt = $conexao->prepare("SELECT * FROM pacotes;");
+        $stmt = $conexao->prepare("SELECT * FROM produto;");
         $stmt->execute();
-        $pacotes = $stmt->fetchAll();
+        $produtos = $stmt->fetchAll();
         $stmt = null;
-        return $pacotes;
+        return $produtos;
     }
 }
+
+?>

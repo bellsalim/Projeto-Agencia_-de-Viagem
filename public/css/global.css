@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* Main Settings */
 * {
@@ -7,24 +7,21 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --primary-color: hsl(182, 54%, 46%);
   --secondary-color: hsl(182, 54%, 70%);
   --bg-color: hsl(163, 60%, 95%);
   --white: #fff;
   --black: #000;
-  --modal-bg: rgba(0,0,0,0.8);
+  --modal-bg: rgba(0, 0, 0, 0.8);
 }
 
-body{
+body {
   display: grid;
   justify-content: center;
   grid-template-columns: minmax(800px, 960px);
   grid-template-rows: 100px 1fr 40px;
-  grid-template-areas: 
-  "header",
-  "main",
-  "footer";
+  grid-template-areas: "header", "main", "footer";
   min-height: 100vh;
   padding: 0 80px;
   background: url("../assets/theater.jpg");
@@ -34,42 +31,45 @@ body{
 }
 
 /* Font Settings */
-h1, h2, a{
+h1,
+h2,
+a {
   font-family: "Noto Serif", serif;
 }
 
-h3, p{
+h3,
+p {
   font-family: "Noto Sans", sans-serif;
 }
 
-h1{
+h1 {
   font-size: 36px;
   line-height: 36px;
   color: var(--primary-color);
 }
 
-h2{
+h2 {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 10px;
   color: var(--primary-color);
 }
 
-h3{
+h3 {
   font-size: 18px;
   margin-bottom: 16px;
   font-weight: 400;
   color: var(--black);
 }
 
-a{
+a {
   color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-p{
+p {
   margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
@@ -77,11 +77,11 @@ p{
 }
 
 /* HTML Elements */
-img{
+img {
   max-width: 100%;
 }
 
-hr{
+hr {
   width: 100%;
   height: 1px;
   border-radius: 100%;
@@ -89,25 +89,25 @@ hr{
   opacity: 0.15;
   border: none;
 }
-li{
+li {
   list-style: none;
 }
-fieldset{
+fieldset {
   padding: 16px;
   margin-bottom: 8px;
 }
 
-footer{
+footer {
   margin-top: 10px;
   text-align: center;
 }
 
-.button{
+.button {
   background: var(--primary-color);
   padding: 8px 16px;
   border-radius: 6px;
   text-align: center;
-  transition: background .25s;
+  transition: background 0.25s;
   width: 100%;
   margin-top: 16px;
   border: none;
@@ -116,16 +116,16 @@ footer{
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background: var(--secondary-color);
 }
 
 /* MODAL */
-#modal{
+#modal {
   z-index: 1000;
   display: none;
 }
-#modal.active{
+#modal.active {
   display: grid;
   place-items: center;
   position: fixed;
@@ -137,14 +137,14 @@ footer{
   backdrop-filter: blur(4px);
 }
 
-#modal.active .wrapper{
+#modal.active .wrapper {
   position: relative;
   background: var(--white);
   border-radius: 8px;
   padding: 40px;
 }
 
-#modal.active .wrapper i{
+#modal.active .wrapper i {
   position: absolute;
   right: 40px;
   cursor: pointer;

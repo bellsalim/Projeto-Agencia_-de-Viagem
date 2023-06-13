@@ -11,9 +11,9 @@ class CarrinhoController {
         $stmt->execute();
         $carrinhoId = $conexao->lastInsertId();
 
-        $stmt = $conexao->prepare("INSERT INTO carrinho_has_pacotes(carrinho_idcarrinho, pacotes_codigo) VALUES(:carrinho, :pacotes);");
+        $stmt = $conexao->prepare("INSERT INTO carrinho_has_produto(carrinho_idcarrinho, produto_idproduto) VALUES(:carrinho, :produto);");
         $stmt->bindParam('carrinho', $carrinhoId);
-        $stmt->bindParam('pacotes', $dados['codigo']);
+        $stmt->bindParam('produto', $dados['idproduto']);
         $stmt->execute();
         $stmt = null;
 

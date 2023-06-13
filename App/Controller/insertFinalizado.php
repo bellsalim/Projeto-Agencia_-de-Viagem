@@ -22,32 +22,32 @@
 	$stmt2->execute();
 	$stmt2 = null;
 
-	$stmt = $conn->prepare('SELECT pacotes.nome, pacotes.valor, pacotes.imagem, carrinho_has_pacotes.quantidade
+	$stmt = $conn->prepare('SELECT produto.nome, produto.valor, produto.imagem, carrinho_has_produto.quantidade
         FROM finalizacompra 
         INNER JOIN carrinho ON carrinho.idcarrinho = finalizacompra.carrinho_idcarrinho 
-        INNER JOIN carrinho_has_pacotes ON carrinho.idcarrinho = carrinho_has_pacotes.carrinho_idcarrinho 
-        INNER JOIN pacotes ON pacotes.codigo = carrinho_has_pacotes.pacotes_codigo 
+        INNER JOIN carrinho_has_produto ON carrinho.idcarrinho = carrinho_has_produto.carrinho_idcarrinho 
+        INNER JOIN produto ON produto.idproduto = carrinho_has_produto.produto_idproduto 
         WHERE carrinho.cliente_cpf = "'.$_SESSION["user_cpf"].'" AND finalizaCompra.status = "CL";');
     $stmt->execute();
     $pCarrinho = $stmt->fetchAll();
 	$stmt = null;
 
 	foreach($pCarrinho as $row){
-	$stmt1 = $conn->prepare('INSERT INTO pedidoconcluido(cliente_cpf, nomepacotes, valorpacotes,
-	imagempacotes, qtdpacotes) VALUES(:cliente_cpf, :nomepacotes, :valorpacotes, :imagempacotes, :qtdpacotes);');
+	$stmt1 = $conn->prepare('INSERT INTO pedidoconcluido(cliente_cpf, nomeProduto, valorProduto,
+	imagemProduto, qtdProduto) VALUES(:cliente_cpf, :nomeProduto, :valorProduto, :imagemProduto, :qtdProduto);');
 	    $stmt1->execute( array(
 			    	':cliente_cpf' => $_SESSION["user_cpf"],
-			    	':nomepacotes' => $row[0],
-				    ':valorpacotes' => $row[1],
-				    ':imagempacotes' => $row[2],
-				    ':qtdpacotes' => $row[3]
+			    	':nomeProduto' => $row[0],
+				    ':valorProduto' => $row[1],
+				    ':imagemProduto' => $row[2],
+				    ':qtdProduto' => $row[3]
 		    	)
 			);	
 	}
     $stmt1 = null;
 
-    $stmt3 = $conn->prepare('DELETE FROM carrinho_has_pacotes WHERE carrinho_idcarrinho = :carrinho_codigo');
-    $stmt3->bindParam(':carrinho_codigo', $result[0]);
+    $stmt3 = $conn->prepare('DELETE FROM carrinho_has_produto WHERE carrinho_idcarrinho = :carrinho_idproduto');
+    $stmt3->bindParam(':carrinho_idproduto', $result[0]);
     $stmt3->execute();
     $stmt3 = null;
 	
